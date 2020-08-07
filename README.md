@@ -27,15 +27,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
-
+Document Object Model is an object oriented representation of a web page.
 2. What is an event?
-
+something that the browser does based on an executable action, and if than statement/logic statement
 3. What is an event listener?
-
+and interface that handles and event or listens for the executable in order to tell the browser or app how to response based on that executable
 4. Why would we convert a NodeList into an Array?
-
+because you cant use Nodelist when dealing with querySelectorAll() because it would return a Nodelist not an array so we couldnt use any of our array methods 
 5. What is a component?
-
+independent and reuasuable pieces of code. they work in isolation and return.
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
@@ -64,11 +64,11 @@ Your finished project must include all of the following requirements:
 
 - [x ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
 
-- [ ] Following the instructions in the `components/Header.js` file, create the Header.
+- [x ] Following the instructions in the `components/Header.js` file, create the Header.
 
-- [ ] Following the instructions in the `components/Tabs.js` file, create the Tabs.
+- [ x] Following the instructions in the `components/Tabs.js` file, create the Tabs.
 
-- [ ] Following the instructions in the `components/Cards.js` file, create the Cards.
+- [x] Following the instructions in the `components/Cards.js` file, create the Cards.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
