@@ -15,18 +15,19 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
 .then(response=>{
     console.log(response.data)
 
-    response.data.forEach(element => {
-        console.log('test2',element)
-        
-        axios.get(element.tab)
-        .then(response=>{
-            topics(response.data)
-        })
-    })
+    for(let values of Object.values(response.data)){
+        const tab = document.createElement('div')
+        const topics = document.querySelector(".topics")
+        tab.textContent = values
+        topics.appendChild(tab)
+        tab.className = ("tab")
+    }
 })
 
 
-.catch(error=>{
-    console.log("test",error)
-})
+
+
+
+
+
 

@@ -25,14 +25,19 @@ function Header() {
     date.className = 'date'
     temp.className = 'temp'
 
-    date.textContent = header.date
-    title.textContent= header.title
-    temp.textContent= header.temp
+    date.textContent = "MARCH 28, 2020"
+    title.textContent= "Lambda Times"
+    temp.textContent= "98°"
 
-    return Header;
+    return header;
     
 }
 
-entryPoint.appendChild(Header)
-  console.log(Header)
+entryPoint.appendChild(Header());
+//   console.log(Header)
     
+// function add(a,b){
+// return a+b;
+// }
+
+// console.log(add(2,4));
