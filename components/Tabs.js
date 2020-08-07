@@ -10,3 +10,23 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 import axios from 'axios'
+
+axios.get('https://lambda-times-api.herokuapp.com/topics')
+.then(response=>{
+    console.log(response.data)
+
+    response.data.forEach(element => {
+        console.log('test2',element)
+        
+        axios.get(element.tab)
+        .then(response=>{
+            topics(response.data)
+        })
+    })
+})
+
+
+.catch(error=>{
+    console.log("test",error)
+})
+

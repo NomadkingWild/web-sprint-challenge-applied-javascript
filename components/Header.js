@@ -10,7 +10,7 @@
 //
 // Use your function to create a header
 // and append it to the DOM inside the div.header-container
-const head = document.querySelector('.header-container')
+const entryPoint = document.querySelector('.header-container')
 function Header() {
     const header = document.createElement('div')
     const date = document.createElement('span')
@@ -33,6 +33,6 @@ function Header() {
     
 }
 
-header.appendChild(head)
-  console.log(header)
+entryPoint.appendChild(Header)
+  console.log(Header)
     
