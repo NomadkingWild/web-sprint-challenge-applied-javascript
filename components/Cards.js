@@ -64,6 +64,7 @@ authorName.textContent= articleObj.authorName
 
 card.addEventListener("click", ()=>{
   card.classList.toggle('card-open')
+  console.log(articleObj.headline)
 })
   return card;
 }
